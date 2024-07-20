@@ -1,18 +1,16 @@
 package com.demobank.currency.domain.model.currency;
 
-public class ConvertedAmount {
-    private CurrencyCode fromCurrencyCode;
-    private Double amount;
-    private CurrencyCode toCurrencyCode;
-    private CurrencyStatus currencyStatus;
-    private Double convertedAmount;
+import com.demobank.currency.domain.model.money.Money;
 
-    public ConvertedAmount(CurrencyCode fromCurrencyCode, Double amount, CurrencyCode toCurrencyCode, CurrencyStatus currencyStatus, Double convertedAmount) {
+public class ConvertedAmount {
+    private Money amount;
+    private CurrencyStatus currencyStatus;
+    private Money convertedAmount;
+
+    public ConvertedAmount(Money amount, CurrencyStatus currencyStatus, Money convertedAmount) {
         super();
 
-        this.setFromCurrencyCode(fromCurrencyCode);
         this.setAmount(amount);
-        this.setToCurrencyCode(toCurrencyCode);
         this.setStatus(currencyStatus);
         this.setConvertedAmount(convertedAmount);
     }
@@ -21,43 +19,27 @@ public class ConvertedAmount {
         super();
     }
 
-    public CurrencyCode getFromCurrencyCode() {
-        return fromCurrencyCode;
-    }
-
-    public void setFromCurrencyCode(CurrencyCode fromCurrencyCode) {
-        this.fromCurrencyCode = fromCurrencyCode;
-    }
-
-    public Double getAmount() {
+    public Money getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    private void setAmount(Money amount) {
         this.amount = amount;
-    }
-
-    public CurrencyCode getToCurrencyCode() {
-        return toCurrencyCode;
-    }
-
-    public void setToCurrencyCode(CurrencyCode toCurrencyCode) {
-        this.toCurrencyCode = toCurrencyCode;
     }
 
     public CurrencyStatus getStatus() {
         return currencyStatus;
     }
 
-    public void setStatus(CurrencyStatus currencyStatus) {
+    private void setStatus(CurrencyStatus currencyStatus) {
         this.currencyStatus = currencyStatus;
     }
 
-    public Double getConvertedAmount() {
+    public Money getConvertedAmount() {
         return convertedAmount;
     }
 
-    public void setConvertedAmount(Double convertedAmount) {
+    private void setConvertedAmount(Money convertedAmount) {
         this.convertedAmount = convertedAmount;
     }
 }
