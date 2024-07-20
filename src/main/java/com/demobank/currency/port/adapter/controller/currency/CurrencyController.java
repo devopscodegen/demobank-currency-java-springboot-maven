@@ -26,7 +26,7 @@ public class CurrencyController {
                 request.getToCurrencyCode()));
                 
         return new ConvertAmountResponse(
-            convertedAmount.getStatus().toString(), 
+            convertedAmount.getCurrencyStatus().toString(), 
             convertedAmount.getConvertedAmount().getAmount());
     }
 }
