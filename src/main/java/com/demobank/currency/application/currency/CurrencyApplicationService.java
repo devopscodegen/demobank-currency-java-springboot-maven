@@ -1,5 +1,6 @@
 package com.demobank.currency.application.currency;
 
+import org.jmolecules.architecture.hexagonal.Application;
 import org.springframework.stereotype.Service;
 
 import com.demobank.currency.domain.model.currency.ConvertedAmount;
@@ -8,6 +9,7 @@ import com.demobank.currency.domain.model.currency.CurrencyStatus;
 import com.demobank.currency.domain.model.money.Money;
 
 @Service
+@Application
 public class CurrencyApplicationService {
 
     public ConvertedAmount convertAmount(ConvertAmountCommand aCommand) {

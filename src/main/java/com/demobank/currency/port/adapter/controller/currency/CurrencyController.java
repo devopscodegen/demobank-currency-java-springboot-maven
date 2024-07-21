@@ -1,5 +1,6 @@
 package com.demobank.currency.port.adapter.controller.currency;
 
+import org.jmolecules.architecture.hexagonal.Adapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import com.demobank.currency.domain.model.currency.ConvertedAmount;
 
 @RestController
 @RequestMapping("/api/v1/currency")
+@Adapter
 public class CurrencyController {
     @Autowired
     private CurrencyApplicationService currencyApplicationService;
