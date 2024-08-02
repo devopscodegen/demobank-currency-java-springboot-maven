@@ -1,7 +1,7 @@
-package com.demobank.currency.domain.model.currency;
+package com.example.bank.currency.domain.model.currency;
 
 import org.jmolecules.ddd.annotation.ValueObject;
-import com.demobank.currency.domain.model.money.Money;
+import com.example.bank.currency.domain.model.money.Money;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

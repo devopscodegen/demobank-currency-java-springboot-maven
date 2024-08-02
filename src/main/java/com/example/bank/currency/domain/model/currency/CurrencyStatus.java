@@ -1,4 +1,4 @@
-package com.demobank.currency.domain.model.currency;
+package com.example.bank.currency.domain.model.currency;
 
 import org.jmolecules.ddd.annotation.ValueObject;
 

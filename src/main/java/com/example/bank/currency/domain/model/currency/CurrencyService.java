@@ -1,8 +1,8 @@
-package com.demobank.currency.domain.model.currency;
+package com.example.bank.currency.domain.model.currency;
 
 import org.springframework.stereotype.Service;
 
-import com.demobank.currency.domain.model.money.Money;
+import com.example.bank.currency.domain.model.money.Money;
 
 @Service
 @org.jmolecules.ddd.annotation.Service

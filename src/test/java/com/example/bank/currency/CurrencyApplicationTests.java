@@ -1,4 +1,4 @@
-package com.demobank.currency;
+package com.example.bank.currency;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

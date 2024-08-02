@@ -1,4 +1,4 @@
-package com.demobank.currency.application.currency;
+package com.example.bank.currency.port.adapter.controller.currency;
 
 import java.math.BigDecimal;
 
@@ -15,9 +15,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class ConvertAmountCommand {
-
-    private String fromCurrencyCode;
-    private BigDecimal amount;
-    private String toCurrencyCode;
+public class ConvertAmountResponse {
+    private String status;
+    private BigDecimal convertedAmount;
 }

@@ -1,13 +1,13 @@
-package com.demobank.currency.application.currency;
+package com.example.bank.currency.application.currency;
 
 import org.jmolecules.architecture.hexagonal.Application;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.demobank.currency.domain.model.currency.ConvertedAmount;
-import com.demobank.currency.domain.model.currency.CurrencyCode;
-import com.demobank.currency.domain.model.currency.CurrencyService;
-import com.demobank.currency.domain.model.money.Money;
+import com.example.bank.currency.domain.model.currency.ConvertedAmount;
+import com.example.bank.currency.domain.model.currency.CurrencyCode;
+import com.example.bank.currency.domain.model.currency.CurrencyService;
+import com.example.bank.currency.domain.model.money.Money;
 
 @Service
 @Application
